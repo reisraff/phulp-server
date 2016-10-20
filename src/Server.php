@@ -23,7 +23,7 @@ class Server
     public function __construct(array $options, LoopInterface $loop = null)
     {
         $this->options = $options = array_merge($this->options, $options);
-        $this->loop = $this->loop ?: Factory::create();
+        $this->loop = $loop ?: Factory::create();
 
         $process = sprintf(
             'php -S %s:%s %s',
