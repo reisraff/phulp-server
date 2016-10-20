@@ -1,0 +1,23 @@
+{
+    "name": "reisraff/phulp-server",
+    "description": "The server addon for phulp",
+    "keywords": ["phulp", "php", "server"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rafael Reis",
+            "email": "reisraff@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "Phulp\\Server\\" : "src"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "reisraff/phulp" : "~1.4",
+        "react/child-process": "~0.4"
+    }
+}
